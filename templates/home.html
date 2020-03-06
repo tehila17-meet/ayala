@@ -8,20 +8,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
 	<!-- Favicon -->
-	<link href="img/favicon.ico" rel="shortcut icon"/>
+	<link href="../static/img/favicon.ico" rel="shortcut icon"/>
 
 	<!-- Google Font -->
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
 
 
 	<!-- Stylesheets -->
-	<link rel="stylesheet" href="css/bootstrap.min.css"/>
-	<link rel="stylesheet" href="css/font-awesome.min.css"/>
-	<link rel="stylesheet" href="css/owl.carousel.min.css"/>
-	<link rel="stylesheet" href="css/animate.css"/>
+	<link rel="stylesheet" href="../static/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="../static/css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="../static/css/owl.carousel.min.css"/>
+	<link rel="stylesheet" href="../static/css/animate.css"/>
 
 	<!-- Main Stylesheets -->
-	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="../static/css/style.css"/>
 
 
 	<!--[if lt IE 9]>
@@ -38,7 +38,7 @@
 
 	<!-- Top right elements -->
 	<div class="spacial-controls">
-		<div class="search-switch"><img src="img/search-icon.png" alt=""></div>
+		<div class="search-switch"><img src="../static/img/search-icon.png" alt=""></div>
 		<div class="nav-switch-warp">
 			<div class="nav-switch">
 				<div class="ns-bar"></div>
@@ -56,13 +56,13 @@
 			<div class="header-warp">
 					<h4 class="site-logo">
 AYALA'S ART GALLERY</h4> 
-				<img src="img/menu-icon.png" alt="" class="menu-icon">
+				<img src="../static/img/menu-icon.png" alt="" class="menu-icon">
 				<ul class="main-menu">
-					<li class="active"><a href="./home.html">Home</a></li>
-					<li><a href="./gallery.html">Gallery</a></li>
-					<li><a href="./gallery-single.html">Single gallery</a></li>
-					<li><a href="./about.html">About Ayala</a></li>
-					<li><a href="./contact.html">Contact</a></li>
+					<li class="active"><a href="{{url_for('index')}}">Home</a></li>
+					<li><a href="{{url_for('gallery')}}">Gallery</a></li>
+					<li><a href="{{url_for('gallery_single')}}">Single gallery</a></li>
+					<li><a href="{{url_for('about')}}">About Ayala</a></li>
+					<li><a href="{{url_for('contact')}}">Contact</a></li>
 				</ul>
 				
 					<div class="copyright">Colorlib 2018  @ All rights reserved <br> Find us on <a href=""><i class="fa fa-facebook"><span style="font-family: 'Ubuntu', sans-serif;padding-top: 100px;margin-top: 100px;">acebook</span></i></a>
@@ -75,47 +75,47 @@ AYALA'S ART GALLERY</h4>
 		<!-- Page section -->
 		<div class="page-section home-page">
 			<div class="hero-slider owl-carousel">
-				<div class="slider-item d-flex align-items-center set-bg" data-setbg="img/gallery/angel.jpg" data-hash="slide-1">
+				<div class="slider-item d-flex align-items-center set-bg" data-setbg="../static/img/gallery/angel.jpg" data-hash="slide-1">
 					<div class="si-text-box">
 						<span>Significant Art Work</span>
 						<h2>Angel</h2>
 						<p>Here there will be a description of the art work. Story behind it, Year it was painted, details, price, location, etc</p>
 						<a href="" class="site-btn">Interested</a>
 					</div>
-					<div class="next-slide-show set-bg" data-setbg="img/gallery/frutis.jpg">
+					<div class="next-slide-show set-bg" data-setbg="../static/img/gallery/frutis.jpg">
 						<a href="#slide-2" class="ns-btn">Next</a>
 					</div>
 				</div>
-				<div class="slider-item d-flex align-items-center set-bg" data-setbg="img/gallery/woman.jpg"  data-hash="slide-2">
+				<div class="slider-item d-flex align-items-center set-bg" data-setbg="../static/img/gallery/woman.jpg"  data-hash="slide-2">
 					<div class="si-text-box">
 						<span>Significant Art Work</span>
 						<h2>Woman</h2>
 						<p>Here there will be a description of the art work. Story behind it, Year it was painted, details, price, location, etc</p>
 						<a href="" class="site-btn">Interested</a>
 					</div>
-					<div class="next-slide-show set-bg" data-setbg="img/gallery/angel.jpg">
+					<div class="next-slide-show set-bg" data-setbg="../static/img/gallery/angel.jpg">
 						<a href="#slide-3" class="ns-btn">Next</a>
 					</div>
 				</div>
-				<div class="slider-item d-flex align-items-center set-bg" data-setbg="img/gallery/angel.jpg" data-hash="slide-3">
+				<div class="slider-item d-flex align-items-center set-bg" data-setbg="../static/img/gallery/angel.jpg" data-hash="slide-3">
 					<div class="si-text-box">
 						<span>Significant Art Work</span>
 						<h2>Angel</h2>
 						<p>Here there will be a description of the art work. Story behind it, Year it was painted, details, price, location, etc</p>
 						<a href="" class="site-btn">Interested</a>
 					</div>
-					<div class="next-slide-show set-bg" data-setbg="img/gallery/frutis.jpg">
+					<div class="next-slide-show set-bg" data-setbg="../static/img/gallery/frutis.jpg">
 						<a href="#slide-4" class="ns-btn">Next</a>
 					</div>
 				</div>
-				<div class="slider-item d-flex align-items-center set-bg" data-setbg="img/gallery/woman.jpg"  data-hash="slide-4">
+				<div class="slider-item d-flex align-items-center set-bg" data-setbg="../static/img/gallery/woman.jpg"  data-hash="slide-4">
 					<div class="si-text-box">
 						<span>Significant Art Work</span>
 						<h2>Woman</h2>
 						<p>Here there will be a description of the art work. Story behind it, Year it was painted, details, price, location, etc</p>
 						<a href="" class="site-btn">Interested</a>
 					</div>
-					<div class="next-slide-show set-bg" data-setbg="img/gallery/angel.jpg">
+					<div class="next-slide-show set-bg" data-setbg="../static/img/gallery/angel.jpg">
 						<a href="#slide-1" class="ns-btn">Next</a>
 					</div>
 				</div>
@@ -138,14 +138,14 @@ AYALA'S ART GALLERY</h4>
 
 
 	<!--====== Javascripts & Jquery ======-->
-	<script src="js/jquery-3.2.1.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/jquery.nicescroll.min.js"></script>
-	<script src="js/isotope.pkgd.min.js"></script>
-	<script src="js/imagesloaded.pkgd.min.js"></script>
-	<script src="js/circle-progress.min.js"></script>
-	<script src="js/main.js"></script>
+	<script src="../static/js/jquery-3.2.1.min.js"></script>
+	<script src="../static/js/bootstrap.min.js"></script>
+	<script src="../static/js/owl.carousel.min.js"></script>
+	<script src="../static/js/jquery.nicescroll.min.js"></script>
+	<script src="../static/js/isotope.pkgd.min.js"></script>
+	<script src="../static/js/imagesloaded.pkgd.min.js"></script>
+	<script src="../static/js/circle-progress.min.js"></script>
+	<script src="../static/js/main.js"></script>
 
 	</body>
 </html>
